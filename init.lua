@@ -1,3 +1,3 @@
 require "core"
--- Plugins
+require "plugins"
 require "core.maps"
