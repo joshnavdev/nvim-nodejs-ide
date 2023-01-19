@@ -1,6 +1,6 @@
 local keymap = vim.keymap
 
-vim.g.mapleader = ""
+vim.g.mapleader = " "
 
 -- Select all
 keymap.set("n", "<C-a>", "gg<S-v>G")
