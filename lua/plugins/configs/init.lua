@@ -40,6 +40,23 @@ M.plugins_init = function (packer_boostrap)
       end
     }
 
+    -- UI
+    use {
+      "akinsho/nvim-bufferline.lua",
+      tag = "v3.*",
+      wants = "nvim-web-devicons",
+      config = function ()
+        require "plugins.configs.bufferline"
+      end
+    }
+
+    use {
+      "hoob3rt/lualine.nvim",
+      wants = "nvim-web-devicons",
+      config = function ()
+        require "plugins.configs.lualine"
+      end
+    }
 
     -- Sync the plugins if it is a boostrap
     if packer_boostrap then
