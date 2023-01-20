@@ -13,3 +13,4 @@ RUN rm -rf /root/temp
 # Copy the curren neovim config
 COPY . /root/.config/nvim
 
+CMD ["nvim"]

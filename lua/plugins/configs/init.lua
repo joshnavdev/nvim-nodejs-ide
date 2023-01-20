@@ -58,6 +58,13 @@ M.plugins_init = function (packer_boostrap)
       end
     }
 
+    use {
+      "themercorp/themer.lua",
+      config = function ()
+        require "plugins.configs.themer"
+      end
+    }
+
     -- Sync the plugins if it is a boostrap
     if packer_boostrap then
       require("packer").sync()

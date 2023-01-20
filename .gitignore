@@ -103,4 +103,4 @@ tags
 # My ignores
 plugin/packer_compiled.lua
 notes.md
-
+examples/*
